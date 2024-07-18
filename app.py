@@ -15,7 +15,7 @@ def transcribe_audio(audio_file):
 
     try:
         # Make a prediction using Whisper
-        result = model.transcribe(audio_file, language='en', task='transcribe')
+        result = model.transcribe(audio_file,task='transcribe')
         transcription = result["text"]
         return transcription
     except Exception as e:
